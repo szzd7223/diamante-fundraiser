@@ -102,4 +102,12 @@ body {
   }
 }
 
+.logo {
+  max-width: 150px; /* Adjust size as needed */
+  margin-bottom: 1.5rem; /* Space below the logo */
+  display: block; /* Center the logo */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 

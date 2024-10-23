@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import CreateFundraiser from './CreateFundraiser';
 import Fund from './Fund';
+import logo from './logo-fundrise.jpg'
 import CreateClaimableBalance from './CreateClaimableBalance';
 import ClaimClaimableBalance from './ClaimClaimableBalance';
 
 function Home() {
   return (
     <div className="App">
+      <img src={logo} alt="Your Logo" className="logo" />
       <h1>Diamante Fundraiser</h1>
       <section>
         <Link to="/create-fundraiser">
