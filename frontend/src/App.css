@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a; /* Dark background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Container */
+.App {
+  max-width: 700px; /* Increased width for larger displays */
+  margin: 2rem auto;
+  padding: 2.5rem; /* Increased padding */
+  background-color: #2a2a2a; /* Dark grey background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Title */
+.App h1 {
+  text-align: center;
+  font-size: 2rem; /* Increased font size */
+  color: #ffffff; /* White text */
+  margin-bottom: 1.5rem;
+}
+
+/* Input and Textarea Styles */
+.App input[type="text"],
+.App input[type="number"],
+.App textarea {
+  width: 80%;
+  max-width: 400px; /* Optional: Limit the maximum width */
+  padding: 1.25rem; /* Increased padding */
+  margin: 0 auto 1.5rem; /* Center the input fields */
+  display: block; /* Ensure it's a block element for margin auto to work */
+  border: 1px solid #555; /* Darker border */
+  border-radius: 5px;
+  background-color: #3a3a3a; /* Darker input background */
+  color: #ffffff; /* White text */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+
+.App input[type="text"]:focus,
+.App input[type="number"]:focus,
+.App textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+  background-color: #444; /* Slightly lighter background on focus */
+}
+
+/* Button Styles */
+.App button {
+  width: 100%;
+  padding: 1.25rem; /* Increased padding */
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  border: 2px solid #141415; /* Border around button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.App button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3; /* Darker border on hover */
+}
+
+/* Message Styles */
+.App p {
+  margin-top: 1.5rem; /* Increased margin */
+  text-align: center;
+  color: #ffffff; /* White text */
+  font-weight: bold;
+}
+
+/* Error Message Styles */
+.App p.error {
+  color: #ff4d4d; /* Red for error messages */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    margin: 1rem; /* Reduce margin on smaller screens */
+    padding: 2rem; /* Reduce padding on smaller screens */
+  }
+
+  .App h1 {
+    font-size: 1.5rem; /* Smaller title font size */
+  }
+
+  .App input[type="text"],
+  .App input[type="number"],
+  .App textarea {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .App button {
+    padding: 1rem; /* Reduce padding */
+  }
+}
+
+
